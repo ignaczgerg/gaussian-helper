@@ -1,5 +1,7 @@
-the first row now says this.
+%chk=test-4.chk
+# opt b3lyp/6-32g(d) geom=connectivity
 asd
+
  2
 
 0  1
