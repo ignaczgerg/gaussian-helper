@@ -6,7 +6,7 @@ def insert(filepath:str, savepath: str, filetype: str):
     first_row = True
     for row in source_file:
         if first_row:
-            row = "%chk=test-4.chk\n# opt b3lyp/6-32g(d) geom=connectivity\n"
+            row = "%chk=test-4.chk\n%CPU=0-53\n# opt b3lyp/6-31g(d) geom=connectivity\n"
             first_row = False
         target_file.write(row)
 

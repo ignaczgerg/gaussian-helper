@@ -1,5 +1,6 @@
 %chk=test-4.chk
-# opt b3lyp/6-32g(d) geom=connectivity
+%CPU=0-53
+# opt b3lyp/6-31g(d) geom=connectivity
 
  2
 
