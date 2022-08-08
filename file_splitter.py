@@ -1,8 +1,6 @@
-import sys
-from tap import Tap
 import args
 
-def parseFromFile(filepath: str, split_char: str, save_path: str, filetype: str):
+def parseFromFile(filepath: str, split_char: str, savepath: str, filetype: str):
     """
     :filepath: Path to the file to be splitted
     :split_char: string entries which by the original file will be splitted. 
@@ -25,13 +23,13 @@ def parseFromFile(filepath: str, split_char: str, save_path: str, filetype: str)
 
     #write each item of parseListFromFile to file
     for index, item in enumerate(parsedListFromFile):
-        with open(save_path+str(index)+'.'+filetype, 'w') as out:
-            out.write(item + '\n')
+        with open(savepath+str(index)+'.'+filetype, 'w') as out:
+            out.write(item)
 
-args = args.CommonArgs().parse_args()
+args = args.SplitterArgs().parse_args()
 
 def main():
-    parseFromFile(args.filepath, args.split_chars, args.save_path, args.file_type) #call function for each file
+    parseFromFile(args.filepath, args.split_chars, args.savepath, args.filetype) #call function for each file
 
 if __name__ == "__main__": 
     main()
