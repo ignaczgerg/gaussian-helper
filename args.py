@@ -17,4 +17,6 @@ class JobCreatorArgs(Tap):
     """Path to save the files. If the path does not exist, it will give an error. The default is: ./"""
     filetype: str
     """Type of the text file to write from and to (.txt, .gjf, .com etc)"""
+    id: str
+    """The name of the out file."""
 
