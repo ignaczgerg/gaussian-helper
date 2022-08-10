@@ -23,7 +23,7 @@ def parseFromFile(filepath: str, split_char: str, savepath: str, filetype: str):
 
     #write each item of parseListFromFile to file
     for index, item in enumerate(parsedListFromFile):
-        with open(savepath+str(index)+'.'+filetype, 'w') as out:
+        with open(savepath+str(index)+filetype, 'w') as out:
             out.write(item)
 
 args = args.SplitterArgs().parse_args()
